@@ -23,6 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        if (empty(auth()->user()->can('ver-dashboard'))) {
+            return redirect()->route('employees.fetch', 'A');
+        } else {
+            return view('home');
+        }
     }
 }

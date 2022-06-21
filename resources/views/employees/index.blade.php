@@ -24,21 +24,9 @@
                                         Nuevo</a>
                                 </div>
                             @endcan
-                            {{-- VALIDAR POR TIPO DE USUARIO Y MOSTRA ACCIONES DIFERENTES, CRAERA TABLA Y RUTA PARA CADA UNO
-                            @can('update', $post)
-                                <table id="employees" class="display table table-striped" style="width:100%">
-                            @endcan --}}
+
                             {{-- ctrl table --}}
                             <input hidden value="{{ $status }}" name="ctrl_status" id="ctrl_status">
-
-                            {{-- <label>Elija un sabor de nieve:
-                                <select class="nieve" name="nieve">
-                                    <option value="">Seleccione Uno …</option>
-                                    <option value="chocolate">Chocolate</option>
-                                    <option value="sardina">Sardina</option>
-                                    <option value="vainilla">Vainilla</option>
-                                </select>
-                            </label> --}}
 
                             <div class="resultado"></div>
 
